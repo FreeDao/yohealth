@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.vc.cloudbalance.widget.LockableHorizontalScrollView
+        android:id="@+id/lockableHorizontalScrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/llFont"
+                android:layout_width="222dp"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical" >
+
+                    <ImageView
+                        android:id="@+id/imgHeadImage"
+                        android:layout_width="@dimen/headimage_width_height"
+                        android:layout_height="@dimen/headimage_width_height"
+                        android:layout_marginLeft="@dimen/headimage_margin_left"
+                        android:layout_marginRight="@dimen/headimage_margin_right"
+                        android:src="@drawable/bg_headimage" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/circleImageView"
+                        android:layout_width="@dimen/headimage_width_height"
+                        android:layout_height="@dimen/headimage_width_height"
+                        android:layout_marginLeft="@dimen/headimage_margin_left"
+                        android:layout_marginRight="@dimen/headimage_margin_right"
+                        
+                        android:visibility="gone"
+                        app:border_color="#FFffffff"
+                        app:border_width="1dp" />
+
+                    <TextView
+                        android:id="@+id/tvName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Peter"
+                        android:textColor="@color/white"
+                        android:textSize="22sp" >
+                    </TextView>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imgLine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/btndata_margin_left_right"
+                    android:src="@drawable/bg_split_f1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btnData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/btndata_margin_left_right"
+                    android:background="@drawable/btn_member_data_selector" />
+
+                <Button
+                    android:id="@+id/btnEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/btndata_margin_left_right"
+                    android:background="@drawable/btn_member_edit_selector" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.vc.cloudbalance.widget.LockableHorizontalScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#898989" >
+    </View>
+
+</LinearLayout>

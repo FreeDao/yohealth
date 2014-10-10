@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_help_dialog"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="10dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/base_font_color"
+            android:textSize="@dimen/pop_title_textsize"
+            android:layout_marginBottom="10dp"
+            android:text="成年人" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_marginLeft="@dimen/pop_title_textsize" android:layout_marginBottom="10dp" android:textColor="@color/pop_textcolor"
+            android:text="成年人身高变化较少，每次记录检测的体重、体脂、骨骼、水分等体质指标（仅健康秤产品）。" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/base_font_color"
+            android:textSize="@dimen/pop_title_textsize"
+            android:layout_marginBottom="10dp"
+            android:text="儿童" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_marginLeft="@dimen/pop_title_textsize" android:layout_marginBottom="10dp" android:textColor="@color/pop_textcolor"
+            android:text="儿童身高不断变化，每次记录检测的体重，并可输入儿童当时的身高、照片，为宝贝成长记录宝贵一刻。" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/base_font_color"
+            android:textSize="@dimen/pop_title_textsize"
+            android:layout_marginBottom="10dp"
+            android:text="婴儿" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_marginLeft="@dimen/pop_title_textsize" android:layout_marginBottom="10dp" android:textColor="@color/pop_textcolor"
+            android:text="由于婴儿无法站立上秤，婴儿模式采用先妈妈秤，然后再抱着婴儿秤一次的方式测量婴儿体重。" />
+        
+    </LinearLayout>
+
+</LinearLayout>

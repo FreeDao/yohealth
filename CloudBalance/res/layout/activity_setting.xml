@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/PageBg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rlTop"
+        style="@style/TitleBg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btn_back_selector" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/TitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="设置" >
+        </TextView>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                style="@style/SettingHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/lbAccount"
+                    style="@style/SettingHeaderText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="帐号" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rlLogin"
+                style="@style/SettingItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ico_member" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/btnUserManager"
+                        style="@style/SettingItemText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:text="帐号管理" />
+
+                    <TextView
+                        android:id="@+id/btnLogout"
+                        style="@style/SettingItemText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:text="退出登录" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/bg_jian" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rlLogOut"
+                style="@style/SettingItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ico_member" />
+
+                <TextView
+                    android:id="@+id/btnLogin"
+                    style="@style/SettingItemText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:text="登录云称帐号" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/bg_jian" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/SettingHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/lbLanguage"
+                    style="@style/SettingHeaderText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="选择语言" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/SettingItem"
+                android:id="@+id/llLanguage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ico_language" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/tvChooseLanguage"
+                        style="@style/SettingItemText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:text="当前语言" />
+
+                    <TextView
+                        android:id="@+id/tvLanguage"
+                        style="@style/SettingItemText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:text="中文" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/bg_jian" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/SettingHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/lbWeightUnit"
+                    style="@style/SettingHeaderText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="重量单位" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/SettingItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ico_kg" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1" >
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+                        <RadioButton
+                            android:id="@+id/radio0"
+                            android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    
+                    android:layout_weight="1"
+                            style="@style/RabioButtonKGStyle"
+                            android:checked="true"
+                            android:text="公斤" />
+
+                        <RadioButton
+                            android:id="@+id/radio1"
+                            android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    
+                    android:layout_weight="1"  style="@style/RabioButtonKGStyle"
+                            android:text="磅" /> 
+
+                    </RadioGroup>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            
+
+            <LinearLayout
+                style="@style/SettingHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/lbSystem"
+                     style="@style/SettingHeaderText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="系统" />
+            </LinearLayout>
+
+             <LinearLayout
+                style="@style/SettingContent"
+                android:id="@+id/llHelp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ico_help" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/tvHelper"
+                        style="@style/SettingItemText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:text="使用帮助" />
+
+                    
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/bg_jian" />
+            </LinearLayout>
+            <View android:layout_width="match_parent"  android:layout_height="1dp" android:background="@color/underline_color"></View>
+ <LinearLayout
+                style="@style/SettingItem"
+                android:id="@+id/llHelp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ico_about" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/lbAbout"
+                        style="@style/SettingItemText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:text="关于YoHealth" />
+
+                    
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/bg_jian" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlRoot"
+    style="@style/PageBg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rlTop"
+        style="@style/TitleBg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btn_back_selector" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/TitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="客人" >
+        </TextView>
+
+        
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/rlTop" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"  android:focusable="true" 
+android:focusableInTouchMode="true"  >
+
+            <TextView
+                android:id="@+id/tvTip3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:text="（客人的结果不会保存在手机上）"
+                android:textColor="#FFF100" />
+
+            <TextView
+                style="@style/FormText"
+                android:id="@+id/tvTip1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_margin="5dp"
+                android:text="您是？"
+                android:textSize="@dimen/guest_textsize" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_panel_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="5dp" >
+
+                <RadioButton
+                    android:id="@+id/rbGender2"
+                    style="@style/RabioButtonSex2Style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/bg_rb_boy_2_selector"
+                    android:gravity="center"
+                    android:text="帅哥"
+                    android:textColor="@color/underline_color"
+                    android:textSize="@dimen/guest_textsize" />
+
+                <RadioButton
+                    android:id="@+id/rbGender1"
+                    style="@style/RabioButtonSex2Style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/bg_rb_girl_2_selector"
+                    android:gravity="center"
+                    android:text="美女"
+                    android:textColor="@color/base_font_color"
+                    android:textSize="@dimen/guest_textsize" />
+            </RadioGroup>
+
+            <TextView
+                style="@style/FormText"
+                android:id="@+id/tvTipAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="您的年龄？"
+                android:textSize="@dimen/guest_textsize" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_panel_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5dp" >
+
+               
+ <RadioButton
+                    style="@style/RabioButtonSex2Style"
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/bg_rb_girl_2_selector"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/base_font_color"
+                    android:textSize="@dimen/guest_textsize"
+                    android:visibility="invisible" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/etAge"
+                        style="@style/FormEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="@dimen/guest_textsize" >
+                    </EditText>
+
+                    <TextView
+                        style="@style/FormText"
+                        android:id="@+id/tvUnitAge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingBottom="2dp"
+                        android:text="岁"
+                        android:textSize="@dimen/guest_textsize" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/underline_color" >
+                    </View>
+                </RelativeLayout>
+            </LinearLayout>
+<TextView
+                style="@style/FormText"
+                android:id="@+id/tvTip2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="您的身高？"
+                android:textSize="@dimen/guest_textsize" />
+<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_panel_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5dp" >
+
+                
+ <RadioButton
+                    style="@style/RabioButtonSex2Style"
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/bg_rb_girl_2_selector"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/base_font_color"
+                    android:textSize="@dimen/guest_textsize"
+                    android:visibility="invisible" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/etHeight"
+                        style="@style/FormEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:text=""
+                        android:textSize="@dimen/guest_textsize" >
+
+                    </EditText>
+
+                    <TextView
+                        style="@style/FormText"
+                         android:id="@+id/tvUnitCM"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingBottom="2dp"
+                        android:text="厘米"
+                        android:textSize="@dimen/guest_textsize" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/underline_color" >
+                    </View>
+                </RelativeLayout>
+            </LinearLayout>
+            
+
+            <Button
+                android:id="@+id/btnAction"
+                style="@style/BaseBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="15dp"
+                android:text="体验一下" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" style="@style/PageBg"
+    android:orientation="vertical" >
+<RelativeLayout
+        android:id="@+id/rlTop"
+        style="@style/TitleBg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       
+        >
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"  
+            android:background="@drawable/btn_back_selector" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/TitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="添加用户" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvReg"
+            style="@style/TitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:text="注册" >
+        </TextView>
+
+       
+
+    </RelativeLayout>
+    
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+         android:layout_above="@+id/rlBottom"
+        android:layout_below="@+id/rlTop"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"  android:focusable="true" 
+android:focusableInTouchMode="true"  >
+<LinearLayout
+                style="@style/SettingHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/lbTip1"
+                    style="@style/SettingHeaderText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="使用YoHealthID登录" />
+            </LinearLayout>
+           
+<LinearLayout
+                style="@style/SettingContent"
+                android:id="@+id/llHelp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ico_member" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1" >
+
+                    <EditText
+                    android:id="@+id/etUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:background="#00000000"
+                   android:hint="邮箱/手机号"
+                   android:textColor="@color/white"
+                    android:ems="10" >
+                </EditText>
+
+                    
+                </LinearLayout>
+            </LinearLayout>
+ <LinearLayout
+                style="@style/SettingItem"
+                android:id="@+id/llHelp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ico_password" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"  android:layout_marginLeft="5dp"
+                    android:layout_weight="1" >
+
+                    <EditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                     android:gravity="center"
+                   android:background="#00000000" android:hint="密码" android:textColor="@color/white"
+                    android:inputType="textPassword" >
+
+                </EditText>
+
+                    
+                </LinearLayout>
+
+               
+            </LinearLayout>
+            <Button
+                android:id="@+id/btnLogin"
+                style="@style/BaseBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="5dp"
+                android:text="登录" />
+<LinearLayout
+                style="@style/SettingHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/SettingHeaderText"
+                    android:id="@+id/lbTip2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="用云其他社交帐号登录" />
+            </LinearLayout>
+           
+            <LinearLayout
+                style="@style/SettingItem"
+                
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                 <LinearLayout
+              
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" 
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+
+                     <ImageView
+                         android:id="@+id/imgQQ"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:src="@drawable/ico_qq" />
+               
+            </LinearLayout>
+             <LinearLayout
+              
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" 
+                android:layout_weight="1" android:gravity="center"
+                >
+
+                 <ImageView
+                     android:id="@+id/imgWeiBo"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:src="@drawable/ico_weibo" />
+               
+            </LinearLayout>
+               
+            </LinearLayout>
+
+            
+        </LinearLayout>
+    </ScrollView>
+<RelativeLayout
+        android:id="@+id/rlBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+       
+        android:padding="20dp" 
+       
+        >
+
+        <TextView
+            android:id="@+id/tvAddMember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="直接进入"
+            android:textColor="@color/ivory"
+            android:textSize="22sp" >
+        </TextView>
+    </RelativeLayout>
+</RelativeLayout>

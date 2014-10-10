@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_chartview" >
+
+    <RadioGroup
+        android:id="@+id/rbgDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+id/rbDate1"
+                style="@style/RabioButtonBalanceChartDateStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="周" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+id/rbDate2"
+                style="@style/RabioButtonBalanceChartDateStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="月" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+id/rbDate3"
+                style="@style/RabioButtonBalanceChartDateStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="季" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+id/rbDate4"
+                style="@style/RabioButtonBalanceChartDateStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="年" />
+        </LinearLayout>
+    </RadioGroup>
+
+    <RelativeLayout
+        android:id="@+id/llPanel"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btnPre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="34dp"
+            android:background="@drawable/btn_chart_pre_selector"/>
+         <Button
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_chart_next_selector"
+            />
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/rbgType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <RadioButton
+                    android:id="@+id/rbType1"
+                    style="@style/RabioButtonBalanceChartTypeStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="体重" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <RadioButton
+                    android:id="@+id/rbType2"
+                    style="@style/RabioButtonBalanceChartTypeStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="脂肪" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <RadioButton
+                    android:id="@+id/rbType3"
+                    style="@style/RabioButtonBalanceChartTypeStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BMI" />
+            </LinearLayout>
+
+            
+        </LinearLayout>
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <RadioButton
+                    android:id="@+id/rbType4"
+                    style="@style/RabioButtonBalanceChartTypeStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    
+                    android:text="肌肉" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <RadioButton
+                    android:id="@+id/rbType5"
+                    style="@style/RabioButtonBalanceChartTypeStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="骨骼" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <RadioButton
+                    android:id="@+id/rbType6"
+                    style="@style/RabioButtonBalanceChartTypeStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_smaller_textsize"
+                    android:text="含水率" />
+            </LinearLayout>
+
+            
+        </LinearLayout>
+    </RadioGroup>
+
+</LinearLayout>

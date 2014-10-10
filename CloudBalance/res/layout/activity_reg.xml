@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" style="@style/PageBg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rlTop"
+        style="@style/TitleBg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btn_back_selector" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/TitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="注册" >
+        </TextView>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/rlTop" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"  android:focusable="true" 
+android:focusableInTouchMode="true"   >
+
+            <LinearLayout
+                style="@style/SettingHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/lbTip1"
+                    style="@style/SettingHeaderText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="设置账户名称" />
+            </LinearLayout>
+<LinearLayout
+                style="@style/SettingItem"
+                android:id="@+id/llHelp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ico_member" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1" >
+
+                    <EditText
+                    android:id="@+id/etUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:background="#00000000" android:textColor="@color/white"
+                   android:hint="邮箱/手机号"
+                    android:ems="10" >
+                </EditText>
+
+                    
+                </LinearLayout>
+            </LinearLayout>
+             <LinearLayout
+                
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/lbTip2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="请确保邮箱手机号有效，以便将来遗忘密码时取回" />
+            </LinearLayout>
+
+           
+<LinearLayout
+                style="@style/SettingHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/lbTip3"
+                    style="@style/SettingHeaderText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="设置账户密码" />
+            </LinearLayout>
+<LinearLayout
+                style="@style/SettingContent"
+                android:id="@+id/llHelp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ico_password" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1" >
+
+                    <EditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:background="#00000000" android:textColor="@color/white"
+                   android:hint="请输入6-20位的数字或字母" android:inputType="textPassword"
+                    android:ems="10" >
+                </EditText>
+
+                    
+                </LinearLayout>
+            </LinearLayout>
+ <LinearLayout
+                style="@style/SettingItem"
+                android:id="@+id/llHelp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ico_password" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"  android:layout_marginLeft="5dp"
+                    android:layout_weight="1" >
+
+                    <EditText
+                    android:id="@+id/etComPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                     android:gravity="center" android:textColor="@color/white"
+                   android:background="#00000000" android:hint="请再次输入上面的密码"
+                    android:inputType="textPassword" >
+
+                </EditText>
+
+                    
+                </LinearLayout>
+
+               
+            </LinearLayout>
+            <Button
+                android:id="@+id/btnReg"
+                style="@style/BaseBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="5dp"
+                android:text="登录" />
+           
+
+            
+
+           
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
